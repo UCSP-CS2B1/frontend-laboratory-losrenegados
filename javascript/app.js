@@ -1,17 +1,19 @@
 // Param numbers: array of numbers
 // Returns a sorted array
 function insertion_sort(numbers) {
-  let tamanio = numbers.length;
-  for (let i = 1; i < tamanio; i++) {
-    let mayor = numbers[i];
-    let j = i - 1;
-    while (j >= 0 && mayor < numbers[j]) {
-      numbers[j + 1] = numbers[j];
-      j--;
+  for(let i = 1; i < numbers.length; i++){
+    for(let j = i; j > 0; j--){
+      if(numbers[j] < numbers[j-1]){
+        const a = numbers[j];
+        numbers[j] = numbers[j-1];
+        numbers[j-1] = a;
+      }
+      else{
+        break;
+      }
     }
-    numbers[j + 1] = mayor;
+    return numbers;
   }
-  return numbers;
 }
 
 // Param number: single integer
