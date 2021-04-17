@@ -1,14 +1,15 @@
 // Param numbers: array of numbers
 // Returns a sorted array
 function insertion_sort(numbers) {
-  let i, j, mayor, tamanio = numbers.length
+  let tamanio = numbers.length
   for (i = 1; i < tamanio; i++) {
-    mayor = numbers[i];
-    j = i - 1;
+    let mayor = numbers[i];
+    let j = i - 1;
     while (j >= 0 && numbers[j] > mayor) {
       numbers[j + 1] = mayor;
       j = j - 1;
     }
+    numbers[j + 1] = mayor;
   }
   return numbers;
 }
