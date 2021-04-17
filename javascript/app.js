@@ -28,12 +28,14 @@ function factorial(number) {
 // Param number: single integer
 // Returns a single integer
 function fibonacci(number) {
-
-  let serie = [ 1, 1 ];
-  for (let i = 2; i < number; i++) {
-    serie[i] = serie[i - 1] + serie[i - 2];
+  var l = number;
+  var t1 = 0, t2 = 1, n;
+  for (let serie = 0; serie < l; serie++) {
+    n = t1 + t2;
+    t1 = t2;
+    t2 = n;
   }
-  return serie[number - 1]
+  return n;
 }
 
 // Param expression: string containing a mathematical expression
