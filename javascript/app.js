@@ -10,7 +10,7 @@ function insertion_sort(numbers) {
         numbers[j + 1] = numbers[j];
       }
     }
-    numbers[j + 1] = key;
+    numbers[j + 1] = mayor;
   }
   return numbers;
 }
