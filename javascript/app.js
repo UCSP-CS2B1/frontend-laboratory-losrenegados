@@ -6,7 +6,7 @@ function insertion_sort(numbers) {
     let mayor = numbers[i];
     let j = i - 1;
     while (j >= 0 && mayor < numbers[j]) {
-      numbers[j + 1] = mayor;
+      numbers[j + 1] = numbers[j];
       j--;
     }
     numbers[j + 1] = mayor;
@@ -38,7 +38,14 @@ function fibonacci(number) {
 
 // Param expression: string containing a mathematical expression
 // Returns an integer value
-function evaluation(expression) { return expression; }
+function evaluation(expression) {
+  var resultado = 0;
+  expression = expression.match(/[^+*/()-]/g);
+  while (expression.length) {
+    resultado += expression.shift();
+  }
+  return resultado;
+}
 
 if (typeof process === 'object') {
   module.exports = {insertion_sort, factorial, fibonacci, evaluation};
