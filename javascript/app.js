@@ -9,7 +9,6 @@ function insertion_sort(numbers) {
       numbers[j + 1] = mayor;
       j = j - 1;
     }
-    numbers[j + 1] = mayor;
   }
   return numbers;
 }
