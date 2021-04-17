@@ -1,14 +1,13 @@
 // Param numbers: array of numbers
 // Returns a sorted array
 function insertion_sort(numbers) {
-  for(let i = 1; i < numbers.length; i++){
-    for(let j = i; j > 0; j--){
-      if(numbers[j] < numbers[j-1]){
+  for (let i = 1; i < numbers.length; i++) {
+    for (let j = i; j > 0; j--) {
+      if (numbers[j] < numbers[j - 1]) {
         const a = numbers[j];
-        numbers[j] = numbers[j-1];
-        numbers[j-1] = a;
-      }
-      else{
+        numbers[j] = numbers[j - 1];
+        numbers[j - 1] = a;
+      } else {
         break;
       }
     }
