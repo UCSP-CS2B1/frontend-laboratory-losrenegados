@@ -40,10 +40,6 @@ function fibonacci(number) {
 // Returns an integer value
 function evaluation(expression) {
   var resultado = 0;
-  expression = expression.match(/[^+*/()-]/g);
-  while (expression.length) {
-    resultado += parseFloat(expression.shift();
-  }
   return resultado;
 }
 
