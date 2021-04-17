@@ -2,7 +2,7 @@
 // Returns a sorted array
 function insertion_sort(numbers) {
   let tamanio = numbers.length;
-  for (i = 1; i < tamanio; i++) {
+  for (let i = 1; i < tamanio; i++) {
     let mayor = numbers[i];
     let j = i - 1;
     while (j >= 0 && numbers[j] > mayor) {
