@@ -5,14 +5,11 @@ function insertion_sort(numbers) {
   for (let i = 1; i < l; i++) {
     let guardar = numbers[i];
     let j = i - 1;
-    for (; j >= 0; j--) {
-      if (guardar < numbers[j]) {
-        numbers[j - 1] = numbers[j];
-      } else {
-        break;
-      }
+    while (j >= 0 && guardar < numbers[j]) {
+      numbers[j + 1] = numbers[j];
+      j--;
     }
-    numbers[j - 1] = guardar;
+    numbers[j + 1] = guardar;
   }
   return numbers;
 }
