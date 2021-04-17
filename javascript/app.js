@@ -5,9 +5,9 @@ function insertion_sort(numbers) {
   for (let i = 1; i < tamanio; i++) {
     let mayor = numbers[i];
     let j = i - 1;
-    while (j >= 0 && numbers[j] > mayor) {
+    while (j >= 0 && mayor < numbers[j]) {
       numbers[j + 1] = mayor;
-      j = j - 1;
+      j--;
     }
     numbers[j + 1] = mayor;
   }
