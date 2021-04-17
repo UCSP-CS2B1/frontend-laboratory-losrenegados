@@ -17,13 +17,11 @@ function insertion_sort(numbers) {
 // Param number: single integer
 // Returns a single integer
 function factorial(number) {
-  if(number < 0){
+  if (number < 0) {
     console.log('No existe factorial de numeros negativos');
-  }
-  else if(number == 0){
+  } else if (number == 0) {
     return number = 1;
-  }
-  else{
+  } else {
     var i = 1;
     var j;
     for (j = number; j > 0; j--) {
