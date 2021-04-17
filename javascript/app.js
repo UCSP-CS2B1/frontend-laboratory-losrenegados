@@ -40,10 +40,6 @@ function fibonacci(number) {
     if (serie == 1) {
       t1 = 0;
     }
-    if (serie == 2) {
-      t1 = 0;
-      t2 = 1;
-    }
     n = t1 + t2;
     t1 = t2;
     t2 = n;
