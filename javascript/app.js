@@ -17,12 +17,20 @@ function insertion_sort(numbers) {
 // Param number: single integer
 // Returns a single integer
 function factorial(number) {
-  var i = 1;
-  var j;
-  for (j = number; j > 0; j--) {
-    i = i * j;
+  if(number < 0){
+    console.log('No existe factorial de numeros negativos');
   }
-  return i;
+  else if(number == 0){
+    return number = 1;
+  }
+  else{
+    var i = 1;
+    var j;
+    for (j = number; j > 0; j--) {
+      i = i * j;
+    }
+    return i;
+  }
 }
 
 // Param number: single integer
