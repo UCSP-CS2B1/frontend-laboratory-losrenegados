@@ -39,7 +39,11 @@ function fibonacci(number) {
 // Param expression: string containing a mathematical expression
 // Returns an integer value
 function evaluation(expression) {
-  var resultado = 0;
+  var resultado = 0, s = s.match(/[+\-]*(\.\d+|\d+(\.\d+)?)/g) || [];
+
+  while (s.length) {
+    total += parseFloat(s.shift());
+  }
   return resultado;
 }
 
