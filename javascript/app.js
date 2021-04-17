@@ -42,7 +42,7 @@ function evaluation(expression) {
   var resultado = 0;
   expression = expression.match(/[^+*/()-]/g);
   while (expression.length) {
-    resultado += expression.shift();
+    resultado += parseFloat(expression.shift();
   }
   return resultado;
 }
