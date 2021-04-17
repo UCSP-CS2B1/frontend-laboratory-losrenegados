@@ -36,7 +36,7 @@ function factorial(number) {
 function fibonacci(number) {
   var l = number;
   var t1 = 0, t2 = 1, n = 0;
-  for (let serie = 0; serie < l + 1; serie++) {
+  for (let serie = 0; serie < l; serie++) {
     if (serie == 1) {
       t1 = 0;
     }
