@@ -35,7 +35,7 @@ function factorial(number) {
 // Returns a single integer
 function fibonacci(number) {
   var l = number;
-  var t1 = 0, t2 = 1, n;
+  var t1 = 0, t2 = 1, n = 0;
   for (let serie = 0; serie < l; serie++) {
     n = t1 + t2;
     t1 = t2;
