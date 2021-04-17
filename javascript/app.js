@@ -3,13 +3,14 @@
 function insertion_sort(numbers) {
   var i, j, mayor;
   for (i = 1; i < numbers.length; i++) {
-    for (j = i - 1; j >= 0; j--) {
-      if (numbers[i] < numbers[j]) {
-        mayor = numbers[j];
-        numbers[j] = numbers[i];
-        numbers[i] = mayor;
+    mayor = numbers[i];
+    j = i - 1;
+    for (; j >= 0; j--) {
+      if (mayor < numbers[j]) {
+        numbers[j + 1] = numbers[j];
       }
     }
+    numbers[j + 1] = key;
   }
   return numbers;
 }
