@@ -1,7 +1,7 @@
 // Param numbers: array of numbers
 // Returns a sorted array
 function insertion_sort(numbers) {
-  let i, j, mayor;
+  var i, j, mayor;
   for (i = 1; i < numbers.length; i++) {
     for (j = i - 1; j >= 0; j--) {
       if (numbers[i] < numbers[j]) {
