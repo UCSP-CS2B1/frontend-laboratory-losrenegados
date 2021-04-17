@@ -5,10 +5,9 @@ function insertion_sort(numbers) {
   for (i = 1; i < numbers.length; i++) {
     mayor = numbers[i];
     j = i - 1;
-    for (; j >= 0; j--) {
-      if (numbers[j] > mayor) {
-        numbers[j + 1] = numbers[j];
-      }
+    while (j >= 0 && numbers[j] > mayor) {
+      numbers[j + 1] = mayor;
+      j = j - 1;
     }
     numbers[j + 1] = mayor;
   }
