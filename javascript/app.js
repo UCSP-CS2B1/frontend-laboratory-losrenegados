@@ -6,7 +6,7 @@ function insertion_sort(numbers) {
     mayor = numbers[i];
     j = i - 1;
     for (; j >= 0; j--) {
-      if (mayor < numbers[j]) {
+      if (numbers[j] > mayor) {
         numbers[j + 1] = numbers[j];
       }
     }
