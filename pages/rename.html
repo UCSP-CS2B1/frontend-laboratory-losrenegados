@@ -1,1 +1,58 @@
 <!--Your code goes here-->
+<html lang="en">
+	  <head>
+	      <meta charset="UTF-8">
+	      <title>Frontend Laboratory</title>
+   	      <link href="../css/style.css" rel="stylesheet"> 
+	      <script src="../javascript/app.js"> </script>   
+	  </head>
+    <body>
+	<header class="header">
+	   <div class="container logo-nav-container">
+		<a href="#" class="logo">Frontend Laboratory</a>
+		<span class="menu-icon">Ver menú</span>
+		<nav class="navigation">
+		  <ul class="show">
+			<div id="button"><a href="../index.html">Team</a></div>
+			<div id="button"><a href="pages/rename.html">Algorithms</a></div>
+		   </ul>
+	        </nav>
+	    </div>
+	</header> 
+	
+	<div class="boxes">
+		<div class="form-register">
+			<p>Insertion sort</p>
+			<input type="text" name="insertion_input" id="insertion_input">
+			<button onclick="updateInsertionResult(document.getElementById('insertion_input').value)">Compute factorial</button>
+			<div id="insertion_result">Resultado is here</div>
+		</div>
+		<div class="form-register">
+			
+			<p>Factorial</p>
+			<input type="text" name="factorial_input" id="factorial_input">
+			<button onclick="updateFactorialResult(document.getElementById('factorial_input').value)">Compute factorial</button>
+			<div id="factorial_result">Resultado is here</div>
+		</div>
+		<div class="form-register">
+			<p>Fibonacci</p>
+			<input type="text" name="fibonacci_input" id="fibonacci_input">
+			<button onclick="updateFibonacciResult(document.getElementById('fibonacci_input').value)">Compute factorial</button>
+			<div id="fibonacci_result">Resultado is here</div>
+		</div>
+		<div class="form-register">
+			<p>Evaluation</p>
+			<input type="text" name="Evaluation_input" id="Evaluation_input">
+			<button onclick="updateEvaluationResult(document.getElementById('Evaluation_input').value)">Compute factorial</button>
+			<div id="Evaluation_result">Resultado is here</div>
+		</div>
+	</div>
+	
+	<footer>
+	  <div class="container">
+	     <p>Pagina del Dolor</p>
+	  </div>
+	</footer>
+    </body>
+</html> 
+

@@ -14,6 +14,16 @@ function insertion_sort(numbers) {
   return numbers;
 }
 
+function updateInsertionResult(n) {
+	var result = insertion_sort(n);
+	var div = document.getElementById("insertion_result");
+	div.innerHTML = result;
+}
+
+
+
+
+
 // Param number: single integer
 // Returns a single integer
 function factorial(number) {
@@ -31,6 +41,12 @@ function factorial(number) {
   }
 }
 
+function updateFactorialResult(n) {
+	var result = factorial(n);
+	var div = document.getElementById("factorial_result");
+	div.innerHTML = result;
+}
+
 // Param number: single integer
 // Returns a single integer
 function fibonacci(number) {
@@ -46,6 +62,14 @@ function fibonacci(number) {
   }
   return n;
 }
+function updateFibonacciResult(n) {
+	var result = fibonacci(n);
+	var div = document.getElementById("fibonacci_result");
+	div.innerHTML = result;
+}
+
+
+
 
 // Param expression: string containing a mathematical expression
 // Returns an integer value
