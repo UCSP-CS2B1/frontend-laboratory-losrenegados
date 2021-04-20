@@ -1,14 +1,15 @@
 ## Laboratory Activity
 
-**Grade** -
+**Grade** 14
 
-- (5pts) Layout
-- (5pts) CSS 
-- (5pts) Javascript methods
-- (5pts) Responsiveness
+- (3/pts) Layout
+- (3/pts) CSS 
+- (4/5pts) Javascript methods
+- (4/5pts) Responsiveness
 
 **Members:**
 
+¿?
 - Name and surname (Student ID)
 - Name and surname (Student ID)
 - Name and surname (Student ID)
